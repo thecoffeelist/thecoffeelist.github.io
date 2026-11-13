@@ -1,0 +1,28 @@
+:root { --bg:#110e0b; --surface:#1b1713; --ink:#f1e8da; --muted:#b3a693; --brass:#c99a5b; --line:#2e2822; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+header a { color: var(--brass); text-decoration: none; font-size: 12px; letter-spacing: .22em; text-transform: uppercase; font-weight: 700; }
+h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; font-size: 44px; line-height: 1.1; margin: 20px 0 6px; }
+h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: 26px; margin: 40px 0 8px; }
+h3 { font-size: 16px; margin: 24px 0 4px; }
+p, li { color: var(--ink); }
+.muted { color: var(--muted); font-size: 14px; }
+a { color: var(--brass); }
+ul { padding-left: 20px; }
+table { width:100%; border-collapse: collapse; font-size: 14px; margin: 12px 0; }
+th, td { text-align:left; vertical-align: top; padding: 10px 8px; border-top: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 16px 0; }
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+footer a { margin-right: 16px; }
+@media (max-width: 480px) {
+  h1 { font-size: 36px; }
+  table, tbody, tr, td { display:block; }
+  thead { display:none; }
+  tr { border-top: 1px solid var(--line); padding: 10px 0; }
+  td { border: 0; padding: 2px 0; }
+  td:first-child { font-weight: 700; }
+}
+.card > :first-child { margin-top: 0; }
